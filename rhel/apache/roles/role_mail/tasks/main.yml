@@ -1,0 +1,10 @@
+- name: sending an e-mail using Gmail SMTP servers
+  community.general.mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ansiblejaaw@gmail.com
+    password: R3dh4t1!
+    to: Jose Alcazar <jalcazar@redhat.com>
+    subject: Ansible-report
+    body: System  has been successfully provisioned.
+  delegate_to: localhos
