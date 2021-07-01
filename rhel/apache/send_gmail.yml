@@ -1,6 +1,6 @@
 ---
 - name: Envio de correo
-  hosts: localhost
+  hosts: ansible
   connection: local
   gather_facts: false
   tasks:
