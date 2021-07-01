@@ -1,16 +1,9 @@
 ---
 - name: Envio de correo
-  hosts: localhost
+  hosts: ansible
   connection: local
   gather_facts: false
   tasks:
     - name: sending an e-mail using Gmail SMTP servers
-      community.general.mail:
-        host: smtp.gmail.com
-        port: 587
-        username: ansiblejaaw@gmail.com
-        password: R3dh4t1!
-        to: Jose Alcazar <jalcazar@redhat.com>
-        subject: "{{ mail_subject }}"
-        body: "{{ mail_body }}"
-      delegate_to: localhost
+      command: "ansible-playbook send_gmail.yml"
+        
