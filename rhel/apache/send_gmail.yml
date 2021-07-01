@@ -11,6 +11,6 @@
         username: ansiblejaaw@gmail.com
         password: R3dh4t1!
         to: Jose Alcazar <jalcazar@redhat.com>
-        subject: {{ mail_subject }}
-        body: {{ mail_body }}
+        subject: "{{ mail_subject }}"
+        body: "{{ mail_body }}"
       delegate_to: localhost
