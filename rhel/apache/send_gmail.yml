@@ -5,5 +5,5 @@
   gather_facts: false
   tasks:
     - name: sending an e-mail using Gmail SMTP servers
-      command: "ansible-playbook -i ~student1/lab_inventory/hosts send_gmail.yml"
+      shell: "ansible-playbook -i ~student1/lab_inventory/hosts send_gmail.yml"
         
